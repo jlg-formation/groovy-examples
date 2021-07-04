@@ -1,0 +1,4 @@
+# Remove Intellij Idea files.
+.idea
+*.iml
+out
