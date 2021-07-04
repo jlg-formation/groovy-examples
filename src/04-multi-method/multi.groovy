@@ -10,7 +10,8 @@ int method(Object arg) {
 
 Object o = "Object"
 
-// method chosen is string because at runtime, Groovy see that o is a string.
+// method chosen is string because at runtime, Groovy sees
+// that o is a string.
 // at compile time, Java would see o as an object.
 int result = method(o)
 
