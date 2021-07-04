@@ -8,7 +8,8 @@ if (isPrime(nbr)) {
     return
 }
 
-println nbr + " is NOT a prime number"
+// long form for println
+groovy.lang.Script.println(nbr + " is NOT a prime number")
 
 boolean isPrime(int nbr) {
     for (int i = 2; i < nbr; i++) {
