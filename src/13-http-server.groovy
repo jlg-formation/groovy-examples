@@ -5,8 +5,7 @@ HttpServer.create(new InetSocketAddress(PORT), /*max backlog*/ 0).with {
     createContext("/") { http ->
         http.responseHeaders.add("Content-type", "text/plain")
         http.sendResponseHeaders(200, 0)
-        http.responseBody.withWriter { out ->
-            out << "Hello ${http.remoteAddress.hostName}!\n"
+        http.responseBody.withWriter { it << "Hello ${http.remoteAddress.hostName}!\n"
         }
         println "Hit from Host: ${http.remoteAddress.hostName} on port: ${http.remoteAddress.holder.port}"
     }

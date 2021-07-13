@@ -30,7 +30,9 @@ if (str4 == "hello" + "") {
     println "this is equal"
 }
 
-// 5) Triple string are multiline but do not support interpolation.
+def interpolation = 'INTERPOLATION'
+
+// 5) Triple single quote string are multiline but do not support interpolation.
 // The shlash at the beginning allows the first return character to be removed.
 var multilineStr = '''\
 This is a multiline
@@ -38,3 +40,13 @@ with an ${interpolation} that
 is not working.
 '''
 println multilineStr
+
+// 6) Triple double quote string are multiline and support interpolation.
+multilineStr = """\
+This is a multiline
+with an ${interpolation} that
+is working.
+"""
+println multilineStr
+
+// 7) Slashy string
