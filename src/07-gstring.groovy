@@ -29,3 +29,12 @@ var str4 = "hello"
 if (str4 == "hello" + "") {
     println "this is equal"
 }
+
+// 5) Triple string are multiline but do not support interpolation.
+// The shlash at the beginning allows the first return character to be removed.
+var multilineStr = '''\
+This is a multiline
+with an ${interpolation} that
+is not working.
+'''
+println multilineStr
