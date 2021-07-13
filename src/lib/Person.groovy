@@ -1,11 +1,10 @@
-package toto
+package lib
 
-class Titi {
+class Person {
 
     // every field has automatically its setter and getter created and is in fact private.
-    String name = "titi"
-
-    int age = 12
+    String name = "Albert"
+    int age = 45
 
     void setAge(int age) {
         println "setting age..."
@@ -17,7 +16,7 @@ class Titi {
         return age
     }
 
-    void hello() {
-        println "Hello from " + name
+    void sayHello() {
+        println "Hello I am ${name}, and I am ${age} old!"
     }
 }

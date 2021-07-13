@@ -1,3 +1,5 @@
+
+// return keyword is optional.
 int add(int a, int b) {
     println "Adding ${a} and ${b}"
     a + b

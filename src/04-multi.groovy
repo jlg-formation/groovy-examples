@@ -1,4 +1,5 @@
-import static org.junit.Assert.assertEquals
+// Unlike Java, Groovy will evaluate the type of an object at runtime to choose the right method.
+// Java chooses at compile time.
 
 int method(String arg) {
     return 1
@@ -15,6 +16,7 @@ Object o = "Object"
 // at compile time, Java would see o as an object.
 int result = method(o)
 
-assertEquals(1, result)
+// Groovy has a keyword to make assertion
+assert result == 1
 
 println "result = " + result

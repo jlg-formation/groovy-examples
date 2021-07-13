@@ -6,8 +6,7 @@ This project contains a directory `src` with short Groovy code examples.
 
 ```cmd
 cd src
-cd 01-hello-world
-groovy hello.groovy
+groovy 01-hello.groovy
 ```
 
 You can do the same for all other examples.

@@ -3,5 +3,5 @@
 *.iml
 out
 
-# Remove the files we may create
+# Remove the files we may create (example 09)
 hello.txt

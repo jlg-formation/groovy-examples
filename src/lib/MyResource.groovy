@@ -1,3 +1,6 @@
+package lib
+
+// class is by default public (and accessible outside the package)
 class MyResource implements AutoCloseable {
 
     void open(int x) throws Exception {
@@ -12,15 +15,3 @@ class MyResource implements AutoCloseable {
         println "closing..."
     }
 }
-
-void tryThis(int x) {
-    // syntax ARM (coming from Java 7)
-    try (def myRes = new MyResource()) {
-        myRes.open(x)
-    } catch (Exception e) {
-        println "e = $e"
-    }
-}
-
-tryThis(0)
-tryThis(1)
