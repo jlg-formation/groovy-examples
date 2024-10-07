@@ -12,8 +12,8 @@ println "your number is " + nbr
 // 5) method can be used before they are defined.
 // Because in fact, the script is itself a class method.
 if (isPrime(nbr)) {
-    println nbr + " is a prime number."
-    return
+  println nbr + " is a prime number."
+  return
 }
 
 // 5) Here is the long form for println
@@ -22,10 +22,10 @@ groovy.lang.Script.println(nbr + " is NOT a prime number")
 
 // 6) Here is the function used before.
 static boolean isPrime(int nbr) {
-    for (int i = 2; i < nbr; i++) {
-        if (nbr % i == 0) {
-            return false
-        }
+  for (int i = 2; i < nbr; i++) {
+    if (nbr % i == 0) {
+      return false
     }
-    return true
+  }
+  return true
 }
