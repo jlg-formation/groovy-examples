@@ -2,7 +2,20 @@
 
 This project contains a directory `src` with short Groovy code examples.
 
-[Please install Groovy on your computer](https://groovy-lang.org/documentation.html), and then run each example by doing:
+# Install Groovy
+
+[Please install Groovy on your computer](https://groovy-lang.org/documentation.html)
+
+Do not forget to set the env variables:
+
+```
+GROOVY_HOME
+PATH=%PATH%:%GROOVY_HOME%\bin
+```
+
+# Run the examples
+
+By doing:
 
 ```cmd
 cd src
