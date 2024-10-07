@@ -5,8 +5,8 @@ println names.join(", ")
 println names.getClass()
 
 def persons = [
-        "JL": 1,
-        "S" : 2
+  "JL": 1,
+  "S": 2
 ]
 
 println persons

@@ -2,8 +2,7 @@
 var str = 'truc'
 assert str.getClass().toString() == 'class java.lang.String'
 assert str.getClass() == String
-assert str.getClass() == String.class
-assert str instanceof String
+assert str.getClass() == String. class assert str instanceof String
 println str.getClass()
 
 // 2) double quote is also java.lang.String, but...
@@ -27,7 +26,7 @@ println str3.getClass()
 // 4) comparison operator is not .equals but ==
 var str4 = "hello"
 if (str4 == "hello" + "") {
-    println "this is equal"
+  println "this is equal"
 }
 
 def interpolation = 'INTERPOLATION'

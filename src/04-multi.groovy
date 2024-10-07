@@ -2,11 +2,11 @@
 // Java chooses at compile time.
 
 int method(String arg) {
-    return 1
+  return 1
 }
 
 int method(Object arg) {
-    return 2
+  return 2
 }
 
 Object o = "Object"

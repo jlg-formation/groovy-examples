@@ -12,8 +12,8 @@ println file.getClass()
 
 // eachLine is specific to Groovy.
 // the {...} is the short notation for a closure object. (equivalent of lambda function in Groovy)
-file.eachLine { line, nb ->
-    println "${nb}: ${line}"
+file.eachLine {
+  line, nb -> println "${nb}: ${line}"
 }
 
 var content = new File(currentDirectory, filename).getText()
