@@ -1,5 +1,6 @@
 // Unlike Java, Groovy will evaluate the type of an object at runtime to choose the right method.
 // Java chooses at compile time.
+// This behavior is called "Multi-Method"
 
 int method(String arg) {
   return 1

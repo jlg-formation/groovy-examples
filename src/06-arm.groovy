@@ -1,7 +1,7 @@
 import lib.MyResource
 
 void tryThis(int x) {
-  // syntax ARM (coming from Java 7)
+  // syntax ARM - Automatic Resource Management (coming from Java 7)
   try (def myRes = new MyResource()) {
     println myRes.getClass()
     myRes.open(x)
